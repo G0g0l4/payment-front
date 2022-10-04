@@ -1,0 +1,19 @@
+.textarea {
+    font-weight: normal;
+    font-size: .9375rem;
+    min-height: 6.75rem;
+    border-radius: .625rem;
+    margin-top: 10px;
+}
+
+.textarea textarea {
+    border: none;
+    box-shadow: 0 0.125rem 0.1875rem #0000001a;
+    transition: all .3s;
+    /*449553*/
+}
+
+.textarea textarea:focus {
+    border: 1px solid #449553;
+}
+

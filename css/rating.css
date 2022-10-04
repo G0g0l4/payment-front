@@ -1,0 +1,26 @@
+.grades {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grades .grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 1.68rem;
+}
+
+.grades .grade img {
+    width: 1.68rem;
+    height: 1.68rem;
+    text-align: center;
+}
+
+.grades .grade:hover {
+    cursor: pointer;
+}

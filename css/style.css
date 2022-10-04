@@ -1,0 +1,252 @@
+body, html {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    background: #fff;
+    background: radial-gradient(circle, #fff 0, #f1f1f1 100%);
+    margin: 0;
+    font-family: Roboto, Helvetica Neue, sans-serif
+}
+
+.small-text {
+    font-weight: normal;
+    font-size: .6875rem;
+    color: #1b1f3b;
+    text-align: center;
+}
+
+.text_h6 {
+    text-align: center;
+    word-wrap: break-word;
+    color: #1b1f3b;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.text_h5 {
+    text-align: center;
+    word-wrap: break-word;
+    color: #1b1f3b;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.text_h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #1b1f3b;
+}
+
+.hidden {
+    display: none;
+}
+
+.done {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 65px;
+    height: 65px;
+}
+
+.sum {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sum .currency {
+    margin-left: 0.25rem;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app .container {
+    height: 100%;
+    width: 100%;
+    min-width: 325px;
+    max-width: 500px;
+    background-color: #F5F5F5;
+}
+
+.app .container .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    position: relative;
+    background: #F5F5F5;
+}
+
+.app .container .content .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.75rem;
+    height: 3.25rem;
+}
+
+.app .container .content .header .logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.app .container .main-content {
+    flex: 1;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.app .container .main-content section {
+    display: flex;
+    overflow-y: auto;
+    flex: 1;
+    padding: 0 1rem;
+    box-sizing: content-box;
+}
+
+.app .container .main-content section .screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden;
+    flex: 1;
+}
+
+.app .container .main-content section .screen .top {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.app .container .main-content section .screen .top.full-height {
+    flex: 1;
+}
+
+.app .container .main-content section .screen .top .island {
+    position: relative;
+    border-radius: .625rem;
+    background-color: #fff;
+    word-wrap: break-word;
+    text-decoration: none;
+    color: #1b1f3b;
+    outline: none;
+    box-sizing: content-box;
+    padding: 1rem;
+    text-align: left;
+    display: block;
+}
+
+.app .container .main-content section .screen .top .island:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.app .container .main-content section .screen .top .island .island__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.app .container .main-content section .screen .top .island .island__content img {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    border-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 170px;
+}
+
+.app .container .main-content section .screen .top .island .island__content p {
+    font-weight: normal;
+    font-size: 1.2rem;
+    font-family: "Roboto";
+}
+
+.app .container .main-content section .screen .top .guarantee-badge .safety-guarantee {
+    border: 1px solid #d7d7d7;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1.24rem;
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.app .container .main-content section .screen .top .guarantee-badge .safety-guarantee span {
+    color: #3aa981;
+    font-size: 1rem;
+}
+
+.app .container .main-content section .screen .top .guarantee-badge .safety-guarantee a {
+    color: #3aa981;
+}
+
+.app .container .main-content section .screen .primary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    font-size: .9375rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    border: 0;
+    background: 0 0 #526ED3;
+    line-height: inherit;
+    color: #ffffff;
+    position: relative;
+    flex-shrink: 0;
+    vertical-align: top;
+    border-radius: .625rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    font-weight: 700;
+    outline: 0;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all .3s;
+}
+
+.app .container .main-content section .screen .primary-btn:hover {
+    opacity: 0.9;
+}
+
+.app .container .main-content section .screen .primary-btn.disabled {
+    pointer-events: none;
+    opacity: 0.8;
+}

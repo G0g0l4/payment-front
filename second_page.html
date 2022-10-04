@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ClientsDemoStand</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/input.css"/>
+    <link rel="stylesheet" href="./css/payment_methods.css"/>
+</head>
+<body>
+<div class="app">
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <div class="logo">
+                    <img src="./assets/om-logo.svg" alt="Logo">
+                </div>
+            </div>
+            <div class="main-content">
+                <section>
+                    <div class="screen">
+                        <div class="top full-height">
+                            <div class="top-top">
+                                <div class="text_h5">
+                                    Сумма пополнения
+                                </div>
+                                <div class="input">
+                                    <div class="input-wrapper">
+                                        <input type="text" maxlength="7" class="ng-valid ng-touched ng-dirty">
+                                        <div class="placeholder">
+                                            <div class="amount">0</div>
+                                        </div>
+                                        <div class="currency">₽</div>
+                                        <div class="moving-placeholder hidden"
+                                             style="left: 0;">₽
+                                        </div>
+                                    </div>
+                                    <span class="tax-tip error"></span>
+                                    <div class="length-checker"></div>
+                                </div>
+                                <p class="text_h5">
+                                    Способ пополнения
+                                </p>
+                            </div>
+
+
+                            <div class="payment-methods">
+                                <div class="selector">
+                                    <div class="loader">
+                                        <fieldset class="items">
+                                            <div class="payment-method-item">
+                                                <div class="item-wrapper selected">
+                                                    <div class="icon">
+                                                        <img class="logo" style="max-width: 20px; max-height: 20px;"
+                                                             src="./assets/raiffeisen.svg"
+                                                             alt="Райффайзен"></div>
+                                                    <div class="name">Райффайзен</div>
+                                                    <div class="limits">
+                                                        <div class="content">
+                                                            <div class="number">
+                                                                10
+                                                                <span>₽</span>
+                                                            </div>
+                                                            <span class="line">—</span>
+                                                            <div class="number">
+                                                                20&nbsp;760
+                                                                <span>₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="payment-method-item">
+                                                <div class="item-wrapper">
+                                                    <div class="icon">
+                                                        <img class="logo" style="max-width: 20px; max-height: 20px;"
+                                                             src="./assets/sovkombank.svg"
+                                                             alt="Райффайзен"></div>
+                                                    <div class="name">Sovkombank</div>
+                                                    <div class="limits">
+                                                        <div class="content">
+                                                            <div class="number">
+                                                                10
+                                                                <span>₽</span>
+                                                            </div>
+                                                            <span class="line">—</span>
+                                                            <div class="number">
+                                                                20&nbsp;760
+                                                                <span>₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="payment-method-item">
+                                                <div class="item-wrapper disabled">
+                                                    <div class="icon">
+                                                        <img class="logo" style="max-width: 20px; max-height: 20px;"
+                                                             src="./assets/yoomoney.svg"
+                                                             alt="Райффайзен"></div>
+                                                    <div class="name"> ЮMoney</div>
+                                                    <div class="limits">
+                                                        <div class="content">
+                                                            <div class="number">
+                                                                10
+                                                                <span>₽</span>
+                                                            </div>
+                                                            <span class="line">—</span>
+                                                            <div class="number">
+                                                                20&nbsp;760
+                                                                <span>₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a type="button" class="primary-btn" tabindex="0" data-appearance="primary" href="">
+                            Продолжить
+                        </a>
+
+                        <a type="button" class="primary-btn disabled" tabindex="0" data-appearance="primary" href="">
+                            Продолжить
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

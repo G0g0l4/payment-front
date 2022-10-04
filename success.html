@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ClientsDemoStand</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/rating.css"/>
+    <link rel="stylesheet" href="./css/textarea.css"/>
+</head>
+<body>
+<div class="app">
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <div class="logo">
+                    <img src="./assets/om-logo.svg" alt="Logo">
+                </div>
+            </div>
+            <div class="main-content">
+                <section>
+                    <div class="screen">
+                        <div class="top full-height">
+                            <div class="island">
+                                <div class="island__content">
+                                    <img src="./assets/done.svg" alt="done" class="done">
+                                    <div class="text_h5">
+                                        Ваш баланс <br/> пополнен
+                                    </div>
+                                    <div class="sum">
+                                        <div class="text_h1"> + 10</div>
+                                        <span class="currency">₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <div class="content">
+                                <div class="text_h6">Как всё прошло?</div>
+                                <div class="grades">
+                                    <div class="grade selected"><img src="assets/star-on.svg" alt="1"></div>
+                                    <div class="grade"><img src="assets/star-off.svg" alt="2"></div>
+                                    <div class="grade"><img src="assets/star-off.svg" alt="3"></div>
+                                    <div class="grade"><img src="assets/star-off.svg" alt="4"></div>
+                                    <div class="grade"><img src="assets/star-off.svg" alt="5"></div>
+                                </div>
+                                <div class="small-text">
+                                    Напишите отзыв, если есть чем поделиться
+                                </div>
+
+                                <div class="textarea">
+                                    <label for="textarea">
+                                        <textarea tabindex="0" id="textarea"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a type="button" class="primary-btn" tabindex="0" data-appearance="primary" href="">
+                            Отправить отзыв
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.payment-methods {
+    flex-shrink: 1;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.payment-methods .selector {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-methods .selector .items {
+    z-index: 0;
+    min-width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    border-radius: 0.615rem;
+    transition: all .3s;
+    cursor: default;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper:hover:not(.disabled) {
+    background-color: #E8E8E8;
+    color: #333333;
+    cursor: pointer;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper.disabled:not(.selected) {
+    color: #d5d5d5;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper.selected {
+    background-color: #d5d5d5;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper .icon {
+    display: flex;
+    align-items: center;
+    width: 2rem !important;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper .icon .logo {
+    max-width: 20px;
+    max-height: 20px;
+    border-style: none;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper.disabled .icon .logo {
+    filter: grayscale(1);
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper .limits {
+    margin-left: auto;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper .limits .content {
+    color: #8C8C8C;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper .limits .content .number {
+    white-space: nowrap;
+}
+
+.payment-methods .selector .items .payment-method-item .item-wrapper .limits .content .line {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+}
