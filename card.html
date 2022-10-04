@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>ClientsDemoStand</title>
@@ -8,93 +9,111 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/card.css"/>
-    <link rel="stylesheet" href="./css/switcher.css"/>
-</head>
-<body>
-<div class="app">
-    <div class="container">
-        <div class="content">
-            <div class="header">
-                <div class="back flex-1">
-                    <span class="material-icons icon">arrow_back_ios</span>
-                </div>
-                <div class="logo flex-1">
-                    <img src="./assets/om-logo.svg" alt="Logo">
-                </div>
-                <div class="flex-1"></div>
-            </div>
-            <div class="main-content">
-                <section>
-                    <div class="screen">
-                        <div class="text_h5 mb-20 mt-20">
-                            Переведите 770 <span class="dark_gray">Р</span> <br/> одной суммой
-                        </div>
-                        <div class="text_h6 mb-15 secondary_black">
-                            Партнер ожидает перевод на <br/> Цбербанк в течении 10 минут
-                        </div>
 
-                        <div class="top">
-                            <div class="card-wrapper">
-                                <div class="card">
-                                    <div class="card__header">
-                                        <div class="icon">
-                                            <img src="./assets/raiffeisen.svg" alt="Icon">
-                                        </div>
-                                        <div class="timer">
-                                            <span class="material-icons icon">timer</span>
-                                            <div class="text_h5">
-                                                10:05
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- 4.7.0/css/font-awesome.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- 1.16.1/dist/umd/popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- 3.6.0/dist/jquery.slim.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- 3.6.0/jquery.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 4.6.1/dist/js/bootstrap.bundle.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/switcher.css" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="content">
+                <div class="header">
+                    <div class="back flex-1">
+                        <span class="material-icons icon">arrow_back_ios</span>
+                    </div>
+                    <div class="logo flex-1">
+                        <img src="./assets/om-logo.svg" alt="Logo">
+                    </div>
+                    <div class="flex-1"></div>
+                </div>
+                <div class="main-content">
+                    <section>
+                        <div class="screen">
+                            <div class="text_h5 mb-20 mt-20">
+                                Переведите 770 <span class="dark_gray">Р</span> <br /> одной суммой
+                            </div>
+                            <div class="text_h6 mb-15 secondary_black">
+                                Партнер ожидает перевод на <br /> Цбербанк в течении 10 минут
+                            </div>
+
+                            <div class="top">
+                                <div class="card-wrapper">
+                                    <div class="card">
+                                        <div class="card__header">
+                                            <div class="icon">
+                                                <img src="./assets/raiffeisen.svg" alt="Icon">
+                                            </div>
+                                            <div class="timer">
+                                                <span class="material-icons icon">timer</span>
+                                                <div class="text_h5">
+                                                    10:05
+                                                </div>
                                             </div>
                                         </div>
+
+                                        <div class="text_h6 card__number text-left">1111 1111 1111 1111</div>
+                                        <div class="text_h6 card__owner text-left">
+                                            Lorem Ip.
+                                            <a href="#" data-toggle="tooltip" title="Как только партнёр получит от вас деньги, мы сразу пополним ваш баланс">
+                                                <i class="material-icons bg-green info" data-placement="top">info</i>
+                                            </a>
+                                        </div>
+
+                                        <div class="card__description text_h6 text-left">
+                                            <i>Lorem Ipsum Dolor Sit Amet</i>
+                                        </div>
                                     </div>
+                                </div>
 
-                                    <div class="text_h6 card__number text-left">1111 1111 1111 1111</div>
-                                    <div class="text_h6 card__owner text-left">
-                                        Lorem Ip.
-
-                                        <a href="#" data-toggle="tooltip info"
-                                           title="Как только партнёр получит от вас деньги, мы сразу пополним ваш баланс">
-                                            <i class="material-icons bg-green" data-placement="top">info</i>
-                                        </a>
-                                    </div>
-
-                                    <div class="card__description text_h6 text-left">
-                                        <i>Lorem Ipsum Dolor Sit Amet</i>
+                                <div class="guarantee-badge">
+                                    <div class="safety-guarantee">
+                                        <span class="material-icons">lock</span>
+                                        <div class="info">
+                                            Перевод защищён. <a href="/">Детали</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="guarantee-badge">
-                                <div class="safety-guarantee">
-                                    <span class="material-icons">lock</span>
-                                    <div class="info">
-                                        Перевод защищён. <a href="/">Детали</a>
-                                    </div>
-                                </div>
+                            <div class="space"></div>
+
+                            <div class="switcher">
+                                <label for="switch" class="switch">
+                                    <input id="switch" type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+
+                                Lorem Ipsum dolor sit amet
                             </div>
+
+                            <a type="button" class="primary-btn" tabindex="0" data-appearance="primary" href="">
+                                Отправить отзыв
+                            </a>
                         </div>
-
-                        <div class="space"></div>
-
-                        <div class="switcher">
-                            <label for="switch" class="switch">
-                                <input id="switch" type="checkbox">
-                                <span class="slider"></span>
-                            </label>
-
-                            Lorem Ipsum dolor sit amet
-                        </div>
-
-                        <a type="button" class="primary-btn" tabindex="0" data-appearance="primary" href="">
-                            Отправить отзыв
-                        </a>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
+<script src="js/main.js"></script>
 </html>
