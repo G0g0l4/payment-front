@@ -240,7 +240,7 @@ body {
     background: 0 0 #526ED3;
     line-height: inherit;
     color: #ffffff;
-    position: relative;
+    position: inherit;
     flex-shrink: 0;
     vertical-align: top;
     border-radius: .625rem;
@@ -255,6 +255,7 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
     transition: all .3s;
+    /* z-index: -1; */
 }
 
 .app .container .main-content section .screen .primary-btn:hover {
@@ -264,4 +265,26 @@ body {
 .app .container .main-content section .screen .primary-btn.disabled {
     pointer-events: none;
     opacity: 0.8;
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: left;
+    background-color: #526ED3;
+    border-radius: .25rem;
+}
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 0 5px 5px;
+    border-bottom-color: #526ED3;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 0 5px 5px;
+    border-bottom-color: #526ED3;
 }

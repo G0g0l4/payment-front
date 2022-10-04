@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>ClientsDemoStand</title>
@@ -32,54 +33,134 @@
         }
     </style>
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- 4.7.0/css/font-awesome.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- 1.16.1/dist/umd/popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- 3.6.0/dist/jquery.slim.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- 3.6.0/jquery.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 4.6.1/dist/js/bootstrap.bundle.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/modal.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
 </head>
+
 <body>
-<div class="app">
-    <div class="container">
-        <div class="content">
-            <div class="header">
-                <div class="logo">
-                    <img src="./assets/om-logo.svg" alt="Logo">
-                </div>
-            </div>
-            <div class="main-content">
-                <section>
-                    <div class="screen">
-                        <div class="top">
-                            <div class="island">
-                                <div class="island__content">
-                                    <div class="text_h5">
-                                        Пополнение баланса <br/> через нашего партнёра
-                                    </div>
-                                    <img src="./assets/welcome.png" alt="">
-                                    <p>
-                                        Сделайте перевод по реквизитам нашего партнёра (физического лица).
-                                        <br/>
-                                        <br/>
-                                        Как только партнёр получит от вас деньги, мы сразу пополним ваш баланс
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="guarantee-badge">
-                                <div class="safety-guarantee">
-                                    <span class="material-icons">lock</span>
-                                    <div class="info">
-                                        Перевод защищён. <a href="/">Детали</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a type="button" class="primary-btn" tabindex="0" data-appearance="primary" href="">
-                            Продолжить
-                        </a>
+    <div class="app">
+        <div class="container">
+            <div class="content">
+                <div class="header">
+                    <div class="logo">
+                        <img src="./assets/om-logo.svg" alt="Logo">
                     </div>
-                </section>
+                </div>
+                <div class="main-content">
+                    <section>
+                        <div class="screen">
+                            <div class="top">
+                                <div class="island">
+                                    <div class="island__content">
+                                        <div class="text_h5">
+                                            Пополнение баланса <br /> через нашего партнёра
+                                        </div>
+                                        <img src="./assets/welcome.png" alt="">
+                                        <p>
+                                            Сделайте перевод по реквизитам нашего партнёра (физического лица).
+                                            <br />
+                                            <br />
+                                            Как только партнёр получит от вас деньги, мы сразу пополним ваш баланс
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="guarantee-badge">
+                                    <div class="safety-guarantee">
+                                        <span class="material-icons">lock</span>
+                                        <div class="info">
+                                            Перевод защищён. <a href="#" id="three" class="button">Детали</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <a href="#" data-toggle="tooltip" title="Как только партнёр получит от вас деньги, мы сразу пополним ваш баланс">
+                                <i class="material-icons bg-green" data-placement="top">info</i>
+                            </a>
+
+
+                            <div id="modal-container" class="modal">
+                                <div class="modal-background">
+                                    <div class="modal">
+                                        <div class="modal-header">
+                                            <i class="material-icons bg-green">lock</i>
+                                            Гарантия безопасности
+                                            <div class="close-modal button float-right">
+                                                <i class="fa fa-angle-down mt-2" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2 class="text_h5">Система условного депонирования P2Pay защищает вас</h2>
+                                            <img src="./assets/welcome.png" alt="" class="modal-img mt-3 mb-3">
+
+                                            <div class="blocks">
+                                                <div class="block mb-2 d-flex">
+                                                    <div class="number">1</div>
+                                                    <div class="text">
+                                                        В начале каждой сделки P2Pay замораживает средства партнёра на
+                                                        балансе условного депонирования — это аналог эскроу-счётов,
+                                                        которые банки используют для обеспечения безопасности сделок.
+                                                    </div>
+                                                </div>
+                                                <div class="block mb-2 d-flex">
+                                                    <div class="number tui-space_right-2">2</div>
+                                                    <div class="text">
+                                                        Средства находятся на балансе условного депонирования P2Pay до
+                                                        того
+                                                        момента, пока партнер не подтвердит поступление перевода от вас.
+                                                    </div>
+                                                </div>
+                                                <div class="block mb-2 d-flex">
+                                                    <div class="number tui-space_right-2">3</div>
+                                                    <div class="text">
+                                                        Если партнер не подтверждает поступление оплаты в
+                                                        течение установленного времени, служба поддержки P2Pay сразу же
+                                                        связывается с вами, убеждается, что вы сделали перевод и
+                                                        пополняет
+                                                        баланс со счёта условного депонирования.
+                                                    </div>
+                                                </div>
+                                                <div class="block mb-2 d-flex">
+                                                    <div class="number tui-space_right-2">4</div>
+                                                    <div class="text">
+                                                        Если же, напротив, выясняется, что перевод не был
+                                                        совершён покупателем — средства возвращаются партнёру с баланса
+                                                        условного депонирования P2Pay.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a type="button" class="primary-btn" tabindex="0" data-appearance="primary" href="">
+                                Продолжить
+                            </a>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
+<script src="js/main.js"></script>
 </html>
