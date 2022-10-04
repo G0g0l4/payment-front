@@ -33,6 +33,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+label {
+    margin-bottom: 0 !important;
+}
+
 .dark_gray {
     color: #75727f;
 }
