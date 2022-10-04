@@ -33,6 +33,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.dark_gray {
+    color: #75727f;
+}
+
+.secondary_black {
+    color: #5b5865 !important;
+}
+
 .text-left {
     text-align: left !important;
 }
@@ -74,6 +82,7 @@ body {
     color: #1b1f3b;
     font-weight: bold;
     font-size: 1rem;
+    line-height: 23px;
 }
 
 .text_h5 {
@@ -113,6 +122,26 @@ body {
 
 .sum .currency {
     margin-left: 0.25rem;
+}
+
+.main-input {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.main-input input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 18px 20px;
+    box-sizing: border-box;
+}
+
+.main-input input::-webkit-input-placeholder,
+.main-input input:-ms-input-placeholder,
+.main-input input::placeholder {
+    color: red;
 }
 
 .app {

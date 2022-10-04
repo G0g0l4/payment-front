@@ -63,6 +63,7 @@
 .card .card__owner .info {
     color: #3aa981;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .card .card__description {
