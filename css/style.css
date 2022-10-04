@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     width: 100%;
     height: 100%
 }
@@ -370,16 +371,79 @@ label {
     background-color: #526ED3;
     border-radius: .25rem;
 }
-.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.tooltip.bs-tooltip-bottom .arrow::before {
     margin-left: -3px;
     content: "";
     border-width: 0 5px 5px;
     border-bottom-color: #526ED3;
 }
 
-.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.tooltip.bs-tooltip-bottom .arrow::before {
     margin-left: -3px;
     content: "";
     border-width: 0 5px 5px;
     border-bottom-color: #526ED3;
+}
+
+
+
+
+
+
+
+
+
+
+
+.inputField {
+    position: relative;
+}
+
+.inputField input {
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    border: 2.8px solid rgba(107, 107, 107, 0);
+}
+
+.inputField input:focus {
+    border: 1.8px solid #6b6b6b;
+    border: 2.8px solid #526ED3;
+    outline: none;
+}
+
+.inputField span {
+    pointer-events: none;
+    opacity: 0.5;
+    position: absolute;
+    padding-left: 20px;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: text;
+}
+
+.inputField input:focus+span,
+.inputField input:not(:placeholder-shown)+span {
+    top: 7px;
+    -webkit-transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+    transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+}
+
+.inputField input,
+.inputField span {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
